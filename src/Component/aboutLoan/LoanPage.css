@@ -1,0 +1,30 @@
+.LoanPage{
+    height: 940px;
+    background-color: white;
+    border: 3px solid rgb(232, 76, 19);
+}
+.LoanNavbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 5%;
+}
+.LoanNavbarLeft span{
+      margin-right: 60px;
+      font-size: 30px;
+      color: rgb(232, 76, 19);
+}
+.LoanNavbarRight button{
+    margin-left: 50px;
+    padding: 12px 30px;
+    border: 1px solid rgb(232, 76, 19);
+    background-color: rgb(232, 76, 19);
+    border-radius: 5px;
+    color: white;
+}
+.LoanPageHome{
+    text-align: center;
+    color:rgb(232, 76, 19) ;
+    margin-top: 15%;
+    font-size: 30px;
+
+}

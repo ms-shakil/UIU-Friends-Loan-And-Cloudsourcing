@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    background-color: rgb(213, 208, 208);
+  
+}
+.HomePage{
+    height: 600px;
+    text-align: center;
+    margin-top: 20%;
+    
+}
+
+.HomePage p{
+    font-size: 85px;
+    text-transform: uppercase;
+    color: rgb(232, 76, 19);
+}
+.HomeButton1{
+    padding: 18px 89px;
+    margin-right: 50px;
+    background-color: rgb(232, 76, 19);
+    border: 1px solid rgb(232, 76, 19);
+    border-radius: 8px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.HomeButton2{
+    padding: 18px 80px;
+    margin-right: 50px;
+    background-color: rgb(232, 76, 19);
+    border: 1px solid rgb(232, 76, 19);
+    border-radius: 8px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}

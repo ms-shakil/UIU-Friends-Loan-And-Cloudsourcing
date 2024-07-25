@@ -1,0 +1,64 @@
+.loan_root {
+    display: flex;
+    justify-content: space-between;
+    justify-items: flex-start;
+}
+
+.loan_info {
+    flex-basis: 50%;
+    margin: 0% 4%;
+}
+.loan_info img{
+    margin-left: 20%;
+}
+.loan_info h1{
+    font-size: 50px;
+    color: #E84C13;
+}
+.loan_info button{
+    padding: 10px 30px;
+    background-color: #E84C13;
+    border: 1px solid#E84C13;
+    border-radius: 5px;
+    color: white;
+}
+.loan_list { 
+    flex-basis: 50%;
+    background: purple;
+}
+
+
+
+
+/* --------------------------------------------- */
+
+.ApplactionForm{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    /* margin-left: 40%; */
+    width: 380px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+.ApplactionFormItems{
+    box-sizing: border-box;
+    margin: 20px 30px;
+}
+.ApplactionFormItems p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(232, 76, 19);
+}
+.ApplactionFormItems button{
+    padding: 10px 10px;
+    margin-top: 25px;
+   
+    border: 1px solid rgb(232, 76, 19);
+    background-color: rgb(232, 76, 19);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
