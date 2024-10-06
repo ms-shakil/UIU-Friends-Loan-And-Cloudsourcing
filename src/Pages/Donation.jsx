@@ -1,5 +1,5 @@
-import CloudSourcing from "../Component/cloudSourcing/CloudSourcing"
-import Navbar from "../Component/Navbar"
+import CloudSourcing from '../Component/cloudSourcing/CloudSourcing';
+import Navbar from '../Component/Navbar';
 
 const Donation = () => {
     return (
@@ -7,6 +7,6 @@ const Donation = () => {
             <Navbar />
             <CloudSourcing />
         </div>
-    )
-}
-export default Donation
+    );
+};
+export default Donation;

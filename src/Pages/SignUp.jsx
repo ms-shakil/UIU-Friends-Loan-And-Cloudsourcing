@@ -1,13 +1,13 @@
-import Navbar from "../Component/Navbar"
-import SignUpPage from "../Component/signUp/SignUpPage"
+import Navbar from '../Component/Navbar';
+import SignUpPage from '../Component/signUp/SignUpPage';
 
 const SignUp = () => {
     return (
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
             <SignUpPage />
         </div>
-    )
-}
+    );
+};
 
-export default SignUp
+export default SignUp;

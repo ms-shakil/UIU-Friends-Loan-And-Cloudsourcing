@@ -1,11 +1,12 @@
 .DonationForm{
-    border: 1px solid white;
+    
+    box-sizing: border-box;
     border-radius: 5px;
     background-color: white;
     /* margin-left: 40%; */
     width: 380px;
     height: 330px;
-    margin-bottom: 30px;
+  
 }
 .DonatironFormItems{
     box-sizing: border-box;
@@ -58,3 +59,83 @@
     width: 100%;
 }
 
+/* 
+create donation page
+} */
+#image{
+    border: none;
+    border-bottom: none;
+}
+.create-donation-form{
+    width: 400px;
+ 
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+}
+
+.create-donation-form h3{
+    text-align: center;
+   
+    color:rgb(232, 76, 19) ;
+}
+
+.inputcontainers {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-bottom: 10px;
+}
+.inputcontainers input{ 
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+    border-radius: none;
+    flex-grow: 1;
+}
+.donate_btn{
+    padding: 10px 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(232, 76, 19);
+    background-color: rgb(232, 76, 19);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* 
+donation list page
+*/
+.Donatelist{
+    background-color: white;
+    border-top: 1px solid rgb(218, 213, 213);
+}
+.list__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -20px;
+    gap: 20px
+}
+.Donatecontainer {
+   padding: 10px 20px;
+   width: 20%;
+   /* padding: 10px; */
+   background: rgb(231, 229, 229);
+   border-radius: 5px;
+   list-style: none;
+   margin-bottom: 25px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+.Donatecontainer button{
+    padding: 10px 25px;
+    margin-top: 30px;
+    border: 1px solid rgb(232, 76, 19);
+    background-color: rgb(232, 76, 19);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}

@@ -1,39 +1,27 @@
-import { useState } from "react";
-import Modal from "../Modal";
-import "./CloudSourcing.css"
-import DonationForm from "./DonationForm";
-import LoanApplication from "../aboutLoan/LoanApplication";
+import { Link } from 'react-router-dom';
+import './CloudSourcing.css';
+import CreateDonation from './CreateDonation';
 
-const CloudSourcing =()=>{
-   const [isOpenDonation, setIsOpenDonation] = useState(false)
-   const [isOpenLoan, setIsOpenLoan] = useState(false)
-
-       return(
+const CloudSourcing = () => {
+    return (
         <div>
-           <div className="CloudSourcingHome">
-
-                     <button onClick={() => setIsOpenLoan(true)}>GET LOAN</button>
-                     <button onClick={() => setIsOpenDonation(true)}>DONATION</button>
-
-                     <Modal 
-                        isOpen={isOpenDonation}
-                        closeModal={(value) => setIsOpenDonation(value)}
-                     >
-                        <DonationForm />
-                     </Modal>
-
-                     <Modal 
-                        isOpen={isOpenLoan}
-                        closeModal={(value) => setIsOpenLoan(value)}
-                     >
-                        <LoanApplication />
-                     </Modal>
-
-                  
-                  <div>This is Donation Home page !</div>
-           </div>
+            <div className="donation__container">
+                <div className="donation__containerleft">
+                    <h1>Bringing Smiles To Millions!</h1>
+                    <p>
+                        Donating helps those in need, promotes compassion,
+                        strengthens communities, and creates a positive impact
+                        on society and lives.
+                    </p>
+                    <Link to="/donation/list">
+                        <button>View all donation</button>
+                    </Link>
+                </div>
+                <div>
+                    <CreateDonation />
+                </div>
+            </div>
         </div>
-       )
-
-}
-export default CloudSourcing ;
+    );
+};
+export default CloudSourcing;

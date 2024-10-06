@@ -1,6 +1,6 @@
-import CloudSourcing from "../Component/cloudSourcing/CloudSourcing"
-import LoanContainer from "../Component/loan"
-import Navbar from "../Component/Navbar"
+import CloudSourcing from '../Component/cloudSourcing/CloudSourcing';
+import LoanContainer from '../Component/loan';
+import Navbar from '../Component/Navbar';
 
 const Loan = () => {
     return (
@@ -8,6 +8,6 @@ const Loan = () => {
             <Navbar />
             <LoanContainer />
         </div>
-    )
-}
-export default Loan
+    );
+};
+export default Loan;

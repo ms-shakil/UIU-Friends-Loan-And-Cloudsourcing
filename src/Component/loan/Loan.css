@@ -2,29 +2,45 @@
     display: flex;
     justify-content: space-between;
     justify-items: flex-start;
+    background: white;
+    border-top: 1px solid rgb(217, 215, 215);
 }
 
 .loan_info {
-    flex-basis: 50%;
+    flex-basis: 40%;
     margin: 0% 4%;
+    
+    
 }
 .loan_info img{
     margin-left: 20%;
+    border-radius: 20px;
 }
 .loan_info h1{
-    font-size: 50px;
-    color: #E84C13;
+    font-size: 35px;
+    color: #f2602b;
+    text-align: center;
+}
+.loan_info p{
+    font-size: 17px;
+   
 }
 .loan_info button{
     padding: 10px 30px;
-    background-color: #E84C13;
-    border: 1px solid#E84C13;
+    margin-top: 15px;
+    background-color: #f2602b;
+    margin-left: 30%;
+    border: none; 
     border-radius: 5px;
     color: white;
 }
 .loan_list { 
-    flex-basis: 50%;
-    background: purple;
+    flex-basis: 60%;
+    background: rgb(226, 222, 226);
+}
+.loan_list h1{
+    text-align: center;
+    color: #f2602b;
 }
 
 
@@ -61,4 +77,150 @@
     color: white;
     font-weight: bold;
     width: 100%;
+}
+
+.loan__list--container {
+    overflow-y: auto;
+    height: 530px;
+    margin-right: 10px;
+   
+    
+}
+
+.loand__list--item  {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.loan__list--button--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.loan__list--button--container button {
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.loan__list--button--container button:first-child {
+   background: rgb(236, 218, 22);
+   white-space: nowrap;
+}
+.loan__list--button--container button:last-child {
+    background: rgb(54, 236, 202);
+    white-space: nowrap;
+ }
+
+
+
+/* bid loan css*\
+.BidForm{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    /* margin-left: 40%; */
+    /* width: 380px;
+    height:300px;
+    margin-bottom: 30px;
+} */
+.BidFormItems{
+    box-sizing: border-box;
+    margin: 20px 30px;
+}
+.BidFormItems p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(232, 76, 19);
+}
+.BidFormItems button{
+    padding: 10px 10px;
+    margin-top: 25px;
+   
+    border: 1px solid rgb(232, 76, 19);
+    background-color: rgb(232, 76, 19);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+.BidContainer{
+    width:600px;
+}
+.LoanStatus{
+    border: 1px solid rgb(153, 148, 148);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.loan__id {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    background: rgba(248, 138, 79, 0.5);
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin: 0;
+}
+
+.loan__amount {
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 20px;
+    background: rgba(173, 233, 161, 0.5);
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin: 0;
+    margin-left: 4px;
+}
+
+.loand__purpose h2 {
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 20px;
+    margin: 5px 0px;
+    border-bottom: 1px solid #d1ebc6;
+    padding-bottom: 3px;
+    display: inline-block;
+}
+
+.loand__purpose p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+
+.BiderDiv{
+      
+       padding: 15px;
+       margin-top: 12px;
+       border: 1px solid rgb(236, 180, 180);
+}
+.BiderDiv button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #f2602b;
+    white-space: nowrap;
 }

@@ -1,4 +1,4 @@
-import { useState } from "react"
+// import { useState } from "react";
 // import LoanApplication from "./Component/aboutLoan/LoanApplication"
 // import LoanPage from "./Component/aboutLoan/LoanPage"
 // import CloudSourcing from "./Component/cloudSourcing/CloudSourcing"
@@ -7,30 +7,56 @@ import { useState } from "react"
 // import Modal from "./Component/Modal"
 // import LoginPage from "./Component/signIn/LoginPage"
 // import SignUpPage from "./Component/signUp/SignUpPage"
-import Navbar from "./Component/Navbar"
+// import Navbar from "./Component/Navbar";
 // import BidLoanForm from "./Component/aboutLoan/BidLoanForm"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from "./Pages/Home";
-import Loan from "./Pages/Loan";
-import Login from "./Pages/Login";
-import SignUp from "./Pages/SignUp";
-import Donation from "./Pages/Donation";
-
+import Home from './Pages/Home';
+import Loan from './Pages/Loan';
+import Login from './Pages/Login';
+import SignUp from './Pages/SignUp';
+import Donation from './Pages/Donation';
+import PrivateRoute from './Component/PrivateRoute';
+import DonationList from './Pages/DonationList';
 
 function App() {
-  return (
-    <div>
-       <Router>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/loan" element={<Loan />} />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/signup" element={<SignUp />} />
-          <Route exact path="/donation" element={<Donation />} />
-        </Routes>
-      </Router>
-      {/* <Navbar /> */}
-      {/* <BrowserRouter>
+    return (
+        <div>
+            <Router>
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route
+                        exact
+                        path="/loan"
+                        element={
+                            <PrivateRoute>
+                                <Loan />
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route
+                        exact
+                        path="/donation"
+                        element={
+                            <PrivateRoute>
+                                <Donation />
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route
+                        exact
+                        path="/donation/list"
+                        element={
+                            <PrivateRoute>
+                                <DonationList />
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route exact path="/login" element={<Login />} />
+                    <Route exact path="/signup" element={<SignUp />} />
+                </Routes>
+            </Router>
+            {/* <Navbar /> */}
+            {/* <BrowserRouter>
         <Router>
           <Route  path="/" element={<Navbar />} />
           <Route  path="/about" render={() => <LoanPage />} />
@@ -46,8 +72,8 @@ function App() {
           
         </Router>
       </BrowserRouter> */}
-    </div>
-  )
+        </div>
+    );
 }
 
-export default App
+export default App;

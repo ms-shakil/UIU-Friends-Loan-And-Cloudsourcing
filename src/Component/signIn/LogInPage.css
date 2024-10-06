@@ -2,34 +2,52 @@ body{
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.Background_logIn{
+    background-image: url("/Img/HomePic.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 .LogIn{
     display: flex;
-    height: calc(100vh - 90px);
+    height:730px;
+
+   
+
 }
+
 .LogInLeft{
-    background-color: #ff8002;
-    width: 40%;
+    /* background-image: url("Img/HomePic.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+.LogInLeft div{
+    color: rgb(65, 64, 64);
+    margin-left: 50px;
+}
 .LogInLeft p{
-    color: white;
-    font-size: 50px;
+    color:#f2602b;
+    font-size: 55px;
+    margin-left: 10px;
     text-transform: uppercase;
+  
     text-align: center;
 
 }
 
 .Images{
-    width: 35%;
+    width: 65%;
+    height: 250px;
     border-radius: 15px;
 }
 .LogInRight{
-    width: 60%;
-    background-color: rgb(204, 198, 198);
+    width: 55%;
+    /* background-color: rgb(236, 231, 231); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,18 +58,27 @@ body{
     background-color: white;
     border-radius: 10px;
     padding: 10px  30px 40px 18px; 
-    width: 40%;
+    width: 50%;
+}
+.LogInRight p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:#f2602b ;
 }
 
 .LoginButton{
         padding: 10px 25px;
-        background-color: #F68B1F;
+        background-color: #f2602b;
         border: none;
         border-radius: 5px;
         color: white;
         font-weight: bold;
        
         width: 100%;
+}
+.LoginButton:hover{
+    background-color: rgba(95, 92, 92, 0.9);
 }
 .LogInRightItems a{
     color: rgb(58, 58, 241);

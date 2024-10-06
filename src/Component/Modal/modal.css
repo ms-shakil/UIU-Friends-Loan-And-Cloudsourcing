@@ -12,25 +12,34 @@
     background: #FFFFFF;
     position: absolute;
     z-index: 100;
-    top: 40%;
-    left: 40%;
+    top: 30%;
+    left: 30%;
     border-radius: 10px;
     padding: 10px;
 }
-.close {
+
+.modal__header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
-    /* padding: 10px 10px; */
+    background: #f7f4f4;
+    padding: 5px;
 }
+.modal__title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
 .close span {
     font-weight: bold;
-    border: 2px solid black;
-    width: 20px;
-    height: 20px;
+    border: 2px solid rgb(91, 89, 89);
+    width: 16px;
+    height: 16px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: rgb(91, 89, 89);
 }
